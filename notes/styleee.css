@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .app {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 200px;
+    background: #f9f9fb;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .nav-link {
+    display: block;
+    background: none;
+    border: none;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .nav-link.active {
+    color: blue;
+  }
+  
+  .tags p {
+    margin: 20px 0 10px;
+    font-weight: bold;
+  }
+  
+  .tags ul {
+    list-style: none;
+  }
+  
+  .tags li {
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Notes List */
+  .notes-list {
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  .create-note {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #4361ee;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .note-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background: #f4f4f4;
+  }
+  
+  .note-item.selected {
+    background-color: #e0e7ff;
+  }
+  
+  .thumbnail {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  .note-info h4 {
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  
+  .note-info .tags,
+  .note-info .date {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  /* Editor */
+  .note-editor {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .note-image-placeholder {
+    width: 100%;
+    height: 150px;
+    background: #e2e8f0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .title-input,
+  .tags-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .note-text {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 10px;
+  }
+  
+  .editor-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .save {
+    padding: 10px;
+    background: #3a86ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cancel {
+    padding: 10px;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

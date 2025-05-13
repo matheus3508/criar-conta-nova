@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Senai Notes</title>
+  <link rel="stylesheet" href="styleee.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Senai Notes</h2>
+      <nav>
+        <button class="nav-link active">All Notes</button>
+        <button class="nav-link">Archived Notes</button>
+      </nav>
+      <div class="tags">
+        <p>Tags</p>
+        <ul>
+          <li>🍳 Cooking</li>
+          <li>💻 Dev</li>
+          <li>🏋️ Fitness</li>
+          <li>🩺 Health</li>
+          <li>👤 Personal</li>
+          <li>⚛️ React</li>
+          <li>📜 Recipes</li>
+          <li>🛒 Shopping</li>
+          <li>✈️ Travel</li>
+          <li>🟦 TypeScript</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Notes List -->
+    <section class="notes-list">
+      <button class="create-note">+ Create New Note</button>
+      <div class="note-item selected">
+        <div class="thumbnail"></div>
+        <div class="note-info">
+          <h4>Japan Travel Planning</h4>
+          <span class="tags">Travel · Personal</span>
+          <span class="date">28 Oct 2024</span>
+        </div>
+      </div>
+      <!-- Add more note items similarly -->
+    </section>
+
+    <!-- Note Editor -->
+    <section class="note-editor">
+      <div class="note-image-placeholder"></div>
+      <input type="text" placeholder="Enter a title..." class="title-input" />
+      <input type="text" placeholder="Add tags separated by commas" class="tags-input" />
+      <textarea placeholder="Start typing your note here..." class="note-text"></textarea>
+      <div class="editor-actions">
+        <button class="save">Save Note</button>
+        <button class="cancel">Cancel</button>
